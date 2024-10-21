@@ -1,7 +1,5 @@
 <html>
-
-
-
+<title> Task Four </title>
 <body>
 
     <div class="login-container">
@@ -20,41 +18,5 @@
             <input type="submit" value="Login">
         </form>
     </div>
-
-    <script>
-        // Simple client-side validation
-        const form = document.getElementById('loginForm');
-
-        form.addEventListener('submit', function(event) {
-            let valid = true;
-            const email = document.getElementById('email');
-            const password = document.getElementById('password');
-            const emailError = document.getElementById('emailError');
-            const passwordError = document.getElementById('passwordError');
-
-            // Clear previous error messages
-            emailError.textContent = '';
-            passwordError.textContent = '';
-
-            // Validate email
-            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email regex
-            if (!emailPattern.test(email.value)) {
-                emailError.textContent = 'Please enter a valid email address.';
-                valid = false;
-            }
-
-            // Validate password length
-            if (password.value.length > 16) {
-                passwordError.textContent = 'Password cannot exceed 16 characters.';
-                valid = false;
-            }
-
-            // Prevent form submission if there are validation errors
-            if (!valid) {
-                event.preventDefault();
-            }
-        });
-    </script>
-
 </body>
 </html>
