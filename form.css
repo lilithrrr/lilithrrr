@@ -1,11 +1,11 @@
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: Futura, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f4f4f4;
+            background-color: linear-gradient(to bottom, #d0e7ff, #d0ffdb);
         }
 
         .login-container {
